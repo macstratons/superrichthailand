@@ -24,3 +24,17 @@ $(function() {
 	    }
 	});
 });
+
+$(function() {
+	$('#login').popover({ 
+	    trigger: 'hover','placement': 'top',
+	    animation: true,
+	    html : true,
+	    title: function() {
+	      return $("#popover-header").html();
+	    },
+	    content: function() {
+	      return $("#popover-form").html();
+	    }
+	});
+});
