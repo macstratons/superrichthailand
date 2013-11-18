@@ -1,46 +1,45 @@
 $(function() {
-	$(".tip").tooltip();
-});
+  
+  //highlight the current nav
+  $("#home a:contains('HOME')").parent().addClass('active');
+  $("#exchange a:contains('EXCHANGE RATE')").parent().addClass('active');
+  $("#about a:contains('ABOUT US')").parent().addClass('active');
+  $("#contact a:contains('CONTACT')").parent().addClass('active');
+  $("#news a:contains('NEWS UPDATE')").parent().addClass('active');
+  $("#faq a:contains('FAQ')").parent().addClass('active');
 
-$(function() {
-	$('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
-});
+  //activate tooltip
+  $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+  /*$('[data-toggle="popover"]').popover({trigger: 'hover','placement': 'top'});*/
+  /*$(".tip").tooltip();*/
 
-/*
-$(function() {
-	$('[data-toggle="popover"]').popover({trigger: 'hover','placement': 'top'});
-});
-*/
+  //add administration login popover
+  $('#login').popover({ 
+      trigger: 'hover','placement': 'top',
+      animation: true,
+      html : true,
+      title: function() {
+        return $("#popover-header").html();
+      },
+      content: function() {
+        return $("#popover-form").html();
+      }
+  });
 
-$(function() {
-	$('[data-toggle="popover"]').popover({ 
-	    trigger: 'hover','placement': 'top',
-	    html : true,
-	    title: function() {
-	      return $("#popover-head").html();
-	    },
-	    content: function() {
-	      return $("#popover-content").html();
-	    }
-	});
-});
+  //add business hours popover
+  $('[data-toggle="popover"]').popover({ 
+      trigger: 'hover','placement': 'top',
+      html : true,
+      title: function() {
+        return $("#popover-head").html();
+      },
+      content: function() {
+        return $("#popover-content").html();
+      }
+  });
 
-$(function() {
-	$('#login').popover({ 
-	    trigger: 'hover','placement': 'top',
-	    animation: true,
-	    html : true,
-	    title: function() {
-	      return $("#popover-header").html();
-	    },
-	    content: function() {
-	      return $("#popover-form").html();
-	    }
-	});
-});
-
-// Charts Scripts
-Morris.Line({
+  //add morris graph chart
+  Morris.Line ({
         element: 'morris-chart-line',
         data: [
           { y: '2006', a: 100, b: 90 },
@@ -54,9 +53,10 @@ Morris.Line({
         xkey: 'y',
         ykeys: ['a', 'b'],
         labels: ['Series A', 'Series B']
-});
+  });
 
-Morris.Bar({
+  //add morris bar chart
+  Morris.Bar({
         element: 'bar-example',
         data: [
           { y: '2006', a: 100, b: 90 },
@@ -70,4 +70,6 @@ Morris.Bar({
         xkey: 'y',
         ykeys: ['a', 'b'],
         labels: ['Series A', 'Series B']
-});
+  });
+
+}); //jQuery is loaded
