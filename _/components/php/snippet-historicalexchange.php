@@ -1,6 +1,6 @@
 <div class="panel panel-converter">
             <div class="panel-heading">
-              <h3 class="panel-title"><i class="glyphicon glyphicon-list"></i> Historical Exchange Rates</h3>
+              <h3 class="panel-title"><i class="fa fa-list-ul"></i> Historical Exchange Rates</h3>
             </div><!-- /.panel-heading -->
 
             <div class="panel-body">

@@ -1,7 +1,7 @@
 <div class="col-sm-12 col-lg-4">
   <div class="panel panel-rate">
     <div class="panel-heading">
-      <h4 class="panel-title"><i class="glyphicon glyphicon-usd"></i> RATE TODAY</h4>
+      <h4 class="panel-title"><i class="fa fa-dollar"></i> RATE TODAY</h4>
     </div>
     <!-- /.panel-heading -->
 

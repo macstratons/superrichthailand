@@ -1,7 +1,7 @@
 <div class="col-sm-12 col-lg-4">
           <div class="panel panel-announcement">
             <div class="panel-heading">
-              <h4 class="panel-title"><i class="glyphicon glyphicon-bullhorn"></i> LATEST ANNOUNCEMENT</h4>
+              <h4 class="panel-title"><i class="fa fa-bookmark"></i> LATEST ANNOUNCEMENT</h4>
             </div><!-- /.panel-heading -->
 
             <div class="panel-body">
