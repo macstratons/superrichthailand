@@ -10,10 +10,10 @@
 
     <!-- Wrapper for slides -->
     <section class="carousel-inner">
-      <div class=" active item"><img src="images/carousel-1-400.jpg"></div>
-      <div class="item"><img src="images/carousel-2-400.jpg"></div>
-      <div class="item"><img src="images/carousel-3-400.jpg"></div>
-      <div class="item"><img src="images/carousel-4-400.jpg"></div>
+      <div class=" active item"><img src="images/carousel-0.jpg"></div>
+      <div class="item"><img src="images/carousel-1.jpg"></div>
+      <div class="item"><img src="images/carousel-2.jpg"></div>
+      <div class="item"><img src="images/carousel-3.jpg"></div>
     </section><!-- /.carousel inner -->
 
     <!-- Controls -->

@@ -125,18 +125,29 @@ a {
 
 /* Nav Bar Brand
 /*------------------------------------------------*/
-
 #header .navbar-brand {
   font-size: 24px;
   font-weight: 800;
   color: @navbar-default-brand-color !important;
   text-transform: uppercase;
   padding: 25px 15px;
+
+  @media (max-width: 337px) {
+    padding: 30px 15px;
+    width: 200px;
+    height: 100%;
+  }
 }
 
 #header.affix .navbar-brand {
   padding: 10px 15px;
   font-size: 23px;
+
+  @media (max-width: 337px) {
+    padding: 10px 15px;
+    width: 200px;
+    height: 100%;
+  }
 }
 
 #header .navbar-brand:hover, #header .navbar-brand:focus {
