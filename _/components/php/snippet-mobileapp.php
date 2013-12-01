@@ -31,7 +31,7 @@
                     <h5 class="modal-title" id="myModalLabel">DOWNLOAD IT FOR FREE!</h5>
                   </div>
                   <div class="modal-body">
-                    <a href="http://play.google.com/store"><img src="images/playstore.png"></a><br>
+                    <a href="http://play.google.com/store"><img src="images/playstore.png" class="img-responsive"></a><br>
                     <a href="http://www.apple.com"><img src="images/appstore.png"></a>
                   </div>
                 </div><!-- /.modal-content -->

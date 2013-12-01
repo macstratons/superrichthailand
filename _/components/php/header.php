@@ -38,9 +38,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<!-- <a class="navbar-brand" href="index.php">SUPERRICH</a> -->
-				<!-- <a href="index.php" id="logo" class="navbar-brand"><img src="http://themearmada.com/demos/sharkfin/img/logo.png"></a> -->
-				<a href="index.php" id="logo" class="navbar-brand"><img src="images/sr-logo.png"></a>
+				<a href="index.php" id="logo" class="navbar-brand"><img src="images/sr-logo.png" class="img-responsive"></a>
 			</div>
 			<!-- /.navbar-header -->
 
