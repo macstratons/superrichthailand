@@ -30,7 +30,7 @@ a {
 /*-------------------------------------------------*/
 #header.affix {
   width: 100%;
-  z-index: 9999;
+  z-index: 9990;
 }
 
 #header .navbar {
@@ -70,7 +70,7 @@ a {
   @media (max-width: 540px) {
     float: none;
     text-align: center;
-    margin: 10px 0;
+    margin: 0;
     padding-left: 0;
   }
 }
@@ -107,13 +107,15 @@ a {
   letter-spacing: 2px;
 
   @media (max-width: 767px) {
-    float: left;
+    float: none;
+    text-align: center;
+    margin-bottom: 5px;
   }
 
   @media (max-width: 540px) {
     float: none;
     text-align: center;
-    margin: 10px 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -131,6 +133,10 @@ a {
   color: @navbar-default-brand-color !important;
   text-transform: uppercase;
   padding: 25px 15px;
+
+  @media (max-width: 991px) {
+    
+  }
 
   @media (max-width: 337px) {
     padding: 30px 15px;
@@ -178,6 +184,20 @@ a {
 
 #header .navbar-nav > li > a {
   font-weight: 700;
+
+  @media (max-width: 991px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 40px 18px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 767px) {
+    color: @navbar-default-link-color;
+    font-size: 13px;
+  }
 }
 
 #header .navbar-nav > li > .dropdown-menu {
@@ -204,11 +224,6 @@ a {
     background-color: @navbar-default-bg;
   }
 
-  #header .navbar-nav > li > a {
-    color: @navbar-default-link-color;
-    font-size: 13px;
-  }
-
   #header .navbar-nav > li > a:hover, #header .navbar-nav > li > a:focus {
     color: @navbar-default-link-hover-color;
   }
@@ -232,7 +247,7 @@ a {
     right: 15px;
     color: @navbar-default-link-color;
     font-size: 18px;
-    z-index: 9999;
+    z-index: 9990;
   }
 
   #header .nav > li.dropdown.open:before {
@@ -256,11 +271,6 @@ a {
   #header .navbar-nav {
     float: right;
     margin-right: -15px;
-  }
-
-  #header .navbar-nav > li > a {
-    padding: 40px 18px;
-    text-transform: uppercase;
   }
 
   #header.affix .navbar-nav > li > a {
@@ -287,13 +297,13 @@ a {
 
   #header .navbar-nav > .active > a, #header .navbar-nav > .active > a:hover, #header .navbar-nav > .active > a:focus {
     color: @navbar-default-link-color;
-    border-bottom: 3px solid #2ecc71;
+    border-bottom: 4px solid #2ecc71;
     padding-bottom: 37px;
     background-color: @navbar-default-link-active-bg;
   }
 
   #header.affix .navbar-nav > .active > a, #header.affix .navbar-nav > .active > a:hover, #header.affix .navbar-nav > .active > a:focus {
-    border-bottom: 2px solid #2ecc71;
+    border-bottom: 3px solid #2ecc71;
     padding-bottom: 23px;
   }
 
@@ -341,7 +351,7 @@ a {
 /* Misc. Customization */
 /*-------------------------------------------------*/
 .superrich-carousel {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .popover-title {
@@ -384,21 +394,21 @@ a {
 }
 
 .th-blue {
-	background-color: @blue;
-	color: #fff;
-	font-weight: lighter;
+  background-color: @blue;
+  color: #fff;
+  font-weight: lighter;
 }
 
 .th-green {
-	background-color: @green;
-	color: #fff;
-	font-weight: lighter;
+  background-color: @green;
+  color: #fff;
+  font-weight: lighter;
 }
 
 .th-green-dark {
-	background-color: @green-dark;
-	color: #fff;
-	font-weight: lighter;
+  background-color: @green-dark;
+  color: #fff;
+  font-weight: lighter;
 }
 
 /* Navbar Customization */
@@ -410,14 +420,14 @@ a {
 }
 
 .navbar-superrich {
-	margin-bottom: @navbar-margin-bottom;
-	background-color: @navbar-default-bg;
-	border-radius: @navbar-border-radius;
-	border: 0px;
+  margin-bottom: @navbar-margin-bottom;
+  background-color: @navbar-default-bg;
+  border-radius: @navbar-border-radius;
+  border: 0px;
 }
 
 .navbar-superrich .navbar-brand {
-	color: @navbar-default-color;
+  color: @navbar-default-color;
 }
 
 .navbar-superrich .navbar-brand:hover,
@@ -427,17 +437,17 @@ a {
 }
 
 .navbar-superrich .navbar-text {
-	color: #777;
+  color: #777;
 }
 
 .navbar-superrich .navbar-nav > li > a {
-	padding-right: 1.5em;
-	font-family: @font-family-serif;
-	font-size: 14px;
+  padding-right: 1.5em;
+  font-family: @font-family-serif;
+  font-size: 14px;
   font-weight: lighter;
   letter-spacing: 1px;
-	color: @navbar-default-color;
-	text-align: center;
+  color: @navbar-default-color;
+  text-align: center;
 }
 
 .navbar-superrich .navbar-nav > li > a:hover,
@@ -528,11 +538,11 @@ a {
 }
 
 .navbar-superrich .navbar-link {
-  	color: #777777;
+    color: #777777;
 }
 
 .navbar-superrich .navbar-link:hover {
-  	color: #333333;
+    color: #333333;
 }
 
 /* Panel Customization */
@@ -560,17 +570,18 @@ a {
 }
 
 .panel-announcement > .panel-body {
-	padding: 0px 15px 0px;
+  padding: 0px 15px 0px;
 }
 
 .panel-announcement > .panel-body h4 {
-	color: @blue;
-	margin-top: 0px;
-	padding-top: 15px;
+  color: @blue;
+  margin-top: 0px;
+  padding-top: 15px;
 }
 
-.panel-announcement > .panel-body button {
-	margin-bottom: 15px;
+.panel-announcement > .panel-body button,
+.panel-announcement > .panel-body a {
+  margin-bottom: 15px;
 }
 
 .panel-announcement > .panel-body img,
@@ -650,13 +661,13 @@ a {
 }
 
 .panel-superrich {
-	border-color: @panel-default-border;
-	margin-top: 20px;
+  border-color: @panel-default-border;
+  margin-top: 20px;
 }
 
 .panel-superrich .panel-heading > h3 {
-	font-family: @font-family-serif;
-	font-size: 20px;
+  font-family: @font-family-serif;
+  font-size: 20px;
   font-weight: lighter;
   letter-spacing: 1px;
 }
@@ -680,7 +691,7 @@ a {
 .announcement-block,
 .rate-block {
   display: block;
-  height: 280px;
+  height: 300px;
 
   @media (max-width: 1199px) {
     height: 100%;
@@ -689,7 +700,7 @@ a {
 
 .mobile-block {
   display: block;
-  height: 280px;
+  height: 300px;
 
   @media (max-width: 1199px) {
     height: 100%;
@@ -726,13 +737,13 @@ a {
 /* Table Customization */
 /*-------------------------------------------------*/
 .table {
-	border: 0px solid #ddd;
-	margin-bottom: 10px;
+  border: 0px solid #ddd;
+  margin-bottom: 10px;
 }
 
 .table > thead > tr > th {
-	text-align: center;
-	border: 0;
+  text-align: center;
+  border: 0;
 }
 
 .table > tbody > tr > td.denom {
@@ -855,28 +866,28 @@ h3.news-tab {
 }
 
 #swap-currency {
-	margin: 22px 0;
-	padding: 0;
-	text-align: center;
+  margin: 22px 0;
+  padding: 0;
+  text-align: center;
 }
 
 #rate-currency p {
-	display: inline;
-	padding: 1em;
-	font-size: 12px;
-	color: @blue;
+  display: inline;
+  padding: 1em;
+  font-size: 12px;
+  color: @blue;
 }
 
 #rate-currency h4 {
-	padding: 0 1em 0;
-	vertical-align: middle;
-	text-align: right;
-	color: @green;
-	letter-spacing: 0.5px;
+  padding: 0 1em 0;
+  vertical-align: middle;
+  text-align: right;
+  color: @green;
+  letter-spacing: 0.5px;
 }
 
 #convert-currency {
-	padding: 0;
+  padding: 0;
 }
 
 /* Footer Customization */
@@ -887,16 +898,16 @@ h3.news-tab {
 }
 
 .footer.row li {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .social-icons-footer {
   float: right;
 
   @media (max-width: 1199px) {
-		float: left;
-		padding-left: 0;
-	}
+    float: left;
+    padding-left: 0;
+  }
 }
 
 .social-icons-footer li {
