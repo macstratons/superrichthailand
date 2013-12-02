@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-sm-12 col-md-8">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
           <h3 class="news-tab">NEWS UPDATE</h3>
           <hr>
           <ul class="media-list">

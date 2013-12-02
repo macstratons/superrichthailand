@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-sm-12 col-md-8">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
           <!-- the actual blog post: title/author/date/content -->
           <h3>A Simple Blog Template for Super Rich (Thailand)</h3>
           <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
