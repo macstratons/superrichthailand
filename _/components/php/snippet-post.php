@@ -1,9 +1,9 @@
-<div class="col-sm-8">
+<div class="col-xs-12 col-sm-12 col-md-8">
           <!-- the actual blog post: title/author/date/content -->
           <h3>A Simple Blog Template for Super Rich (Thailand)</h3>
           <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
           <hr>
-          <img src="images/about.png" class="img-responsive">
+          <img src="images/about.png" class="img-responsive"><br>
           <p>You know, being a test pilot isn't always the healthiest business in the world.</p>
           <p>Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes icing lollipop gummi bears chupa chups pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops soufflé.</p>
           <p>Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame snaps biscuit lemon drops dessert. Candy canes carrot cake danish carrot cake soufflé jelly chocolate cake muffin. Topping brownie donut. Oat cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée toffee.</p>

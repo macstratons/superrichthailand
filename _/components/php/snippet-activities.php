@@ -1,4 +1,4 @@
-<div class="col-sm-4">
+<div class="col-xs-12 col-sm-12 col-sm-4">
           <h3 class="news-tab">PAST ACTIVITIES</h3>
           <div class="list-group">
             <a href="news.html" class="list-group-item active">December 2013<span class="badge">10</span></a>

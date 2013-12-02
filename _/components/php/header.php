@@ -6,7 +6,7 @@
 				<div class="col-md-12 col-xs-12 col-sm-12">
 					<div class="contacts_block">
 						<!-- Edit social icons here -->
-                        <ul class="social-icons">
+                        <ul class="social-icons hidden-xs">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
@@ -44,7 +44,7 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-sr-collapse">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.php">HOME</a></li>
 					<li><a href="exchange.php">EXCHANGE RATE</a></li>
 					<li><a href="about.php">ABOUT US</a></li>

@@ -1,9 +1,9 @@
-<div class="col-sm-8">
+<div class="col-xs-12 col-sm-12 col-md-8">
           <h3 class="news-tab">NEWS UPDATE</h3>
           <hr>
           <ul class="media-list">
             <li class="media">
-              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive" src="http://www.placehold.it/200x150"></a>
+              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive hidden-xs" src="http://www.placehold.it/200x150"></a>
               <div class="media-body">
                 <h4 class="media-heading">Media Heading 1</h4>
                 <p class="small"><em>Posted by Admin on 1.1.2013</em></p>
@@ -13,7 +13,7 @@
             </li><!-- News 1 -->
             <hr>
             <li class="media">
-              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive" src="http://www.placehold.it/200x150"></a>
+              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive hidden-xs" src="http://www.placehold.it/200x150"></a>
               <div class="media-body">
                 <h4 class="media-heading">Media Heading 2</h4>
                 <p class="small"><em>Posted by Admin on 1.1.2013</em></p>
@@ -25,7 +25,7 @@
             </li><!-- News 2 -->
             <hr>
             <li class="media">
-              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive" src="http://www.placehold.it/200x150"></a>
+              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive hidden-xs" src="http://www.placehold.it/200x150"></a>
               <div class="media-body">
                 <h4 class="media-heading">Media Heading 3</h4>
                 <p class="small"><em>Posted by Admin on 1.1.2013</em></p>
@@ -35,7 +35,7 @@
             </li><!-- News 3 -->
             <hr>
             <li class="media">
-              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive" src="http://www.placehold.it/200x150"></a>
+              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive hidden-xs" src="http://www.placehold.it/200x150"></a>
               <div class="media-body">
                 <h4 class="media-heading">Media Heading 4</h4>
                 <p class="small"><em>Posted by Admin on 1.1.2013</em></p>
@@ -47,7 +47,7 @@
             </li><!-- News 4 -->
             <hr>
             <li class="media">
-              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive" src="http://www.placehold.it/200x150"></a>
+              <a class="pull-left" href="news-post.php"><img class="media-object img-responsive hidden-xs" src="http://www.placehold.it/200x150"></a>
               <div class="media-body">
                 <h4 class="media-heading">Media Heading 5</h4>
                 <p class="small"><em>Posted by Admin on 1.1.2013</em></p>
