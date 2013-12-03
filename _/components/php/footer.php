@@ -1,10 +1,11 @@
 <div class="container">
       <hr>
-      <div class="footer row">
-        <section class="col-lg-4 col-md-5 col-xs-12">
+      <section class="footer row">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
           <p>&copy; 2013 Super Rich (Thailand) Co., Ltd. - All Rights Reserved.</p>
-        </section><!-- copyright -->
-        <section class="col-lg-8 col-md-7 col-xs-12">
+        </section>
+        <!-- copyright -->
+        <section class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
           <ul class="social-icons-footer">
             <li><a href="contact.php">Store Location</a></li>
             <li><a href="news.php">Calendar</a></li>
@@ -45,6 +46,9 @@
               </div>
             </li>
           </ul>
-        </section><!-- links -->
-      </div><!-- /.footer -->
-</div><!-- /.container -->
+        </section>
+        <!-- links -->
+      </div>
+      <!-- /.footer -->
+</div>
+<!-- /.container -->
