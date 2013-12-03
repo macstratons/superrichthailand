@@ -24,7 +24,6 @@
 			<!-- /.row -->
 		</div>
 		<!-- /.container -->
-		<a href="#" class="scrollup"></a>
 	</div>
 	<!-- Header Top Bar End -->
 

@@ -31,9 +31,6 @@
     <!-- FOOTER -->
     <?php include '_/components/php/footer.php'; ?>
     
-    <!-- Scroll To Top --> 
-    <a href="#" class="scrollup"><i class="icon-angle-up"></i></a>
-    
     <script src="_/js/bootstrap.js"></script>
     <script src="_/js/superrichth.js"></script>
 
