@@ -6,7 +6,7 @@
         </section>
         <!-- copyright -->
         <section class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-          <ul class="social-icons-footer">
+          <ul class="social-icons-footer pull-right">
             <li><a href="contact.php">Store Location</a></li>
             <li><a href="news.php">Calendar</a></li>
             <li>
