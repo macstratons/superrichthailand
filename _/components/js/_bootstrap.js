@@ -1,5 +1,8 @@
 // @codekit-prepend "jquery.js"
+// @codekit-prepend "jquery.validate.js"
+// @codekit-prepend "additional-methods.js"
 // @codekit-prepend "custom.js"
+// @codekit-prepend "bootstrap-datepicker.js"
 // @codekit-prepend "affix.js"
 // @codekit-prepend "transition.js"
 // @codekit-prepend "tooltip.js"
