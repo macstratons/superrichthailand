@@ -12,7 +12,7 @@
   
   <body id="contact">
     <!-- NAVBAR -->
-    <?php include '_/components/php/header.php'; ?>
+    <?php include '_/components/php/topmenu.php'; ?>
 
     <!-- CONTENT -->
     <div class="container">

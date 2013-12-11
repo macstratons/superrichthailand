@@ -10,7 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
   <body id="faq">
     <!-- NAVBAR -->
-    <?php include '_/components/php/header.php'; ?>
+    <?php include '_/components/php/topmenu.php'; ?>
     
     <!-- CONTENT -->
     <div class="container">

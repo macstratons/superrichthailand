@@ -1,7 +1,7 @@
 <div class="col-sm-12 col-lg-4">
   <div class="panel panel-rate">
     <div class="panel-heading">
-      <h4 class="panel-title"><i class="fa fa-dollar"></i> RATE TODAY</h4>
+      <h4 class="panel-title">RATE TODAY</h4>
     </div>
     <!-- /.panel-heading -->
 
@@ -13,7 +13,6 @@
               <thead>
                 <tr class="superrich-header">
                   <th>Currency</th>
-                  <th>Denom</th>
                   <th>Buying</th>
                   <th>Selling</th>
                 </tr>
@@ -21,43 +20,37 @@
               <tbody>
                 <tr class="superrich">
                   <td><img src="images/flags/USD.png"> USD</td>
-                  <td>100</td>
                   <td class="currency-buying">31.16</td>
                   <td class="currency-selling">31.21</td>
                 </tr>
                 <!-- USD -->
                 <tr class="superrich">
                   <td><img src="images/flags/GBP.png"> GBP</td>
-                  <td>-</td>
                   <td class="currency-buying">49.60</td>
                   <td class="currency-selling">49.90</td>
                 </tr>
                 <!-- GBP -->
                 <tr class="superrich">
                   <td><img src="images/flags/EUR.png"> EUR</td>
-                  <td>500-100</td>
                   <td class="currency-buying">42.00</td>
                   <td class="currency-selling">42.20</td>
                 </tr>
                 <!-- EUR -->
                 <tr class="superrich">
-                  <td><img src="images/flags/CHF.png"> CHF</td>
-                  <td>1000-100</td>
-                  <td class="currency-buying">34.10</td>
-                  <td class="currency-selling">34.30</td>
+                  <td><img src="images/flags/JPY.png"> JPY</td>
+                  <td class="currency-buying">0.3185</td>
+                  <td class="currency-selling">0.3200</td>
                 </tr>
-                <!-- CHF -->
+                <!-- JPY -->
                 <tr class="superrich">
-                  <td><img src="images/flags/AUD.png"> AUD</td>
-                  <td>-</td>
-                  <td class="currency-buying">29.35</td>
-                  <td class="currency-selling">29.50</td>
+                  <td><img src="images/flags/CNY.png"> CNY</td>
+                  <td class="currency-buying">5.16</td>
+                  <td class="currency-selling">5.18</td>
                 </tr>
-                <!-- AUD -->
+                <!-- CNY -->
               </tbody>
             </table>
             <!--table -->
-            <p class="text-center small"><strong>Update:</strong> Nov 5th, 2013 - 18:00 PM</p>
           </div>
           <!-- responsive table --> 
         </div>

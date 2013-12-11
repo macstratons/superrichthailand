@@ -11,10 +11,8 @@
   </head>
   
   <body id="home">
-    <!-- TOP -->
-
     <!-- NAVBAR -->
-    <?php include '_/components/php/header.php'; ?>
+    <?php include '_/components/php/topmenu.php'; ?>
 
     <!-- CAROUSEL -->
     <?php include '_/components/php/carousel.php'; ?>
@@ -25,8 +23,10 @@
         <?php include '_/components/php/snippet-announcement.php'; ?>
         <?php include '_/components/php/snippet-ratetable.php'; ?>
         <?php include '_/components/php/snippet-mobileapp.php'; ?>
-      </div><!-- end row -->
-    </div><!-- end container -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
 
     <!-- FOOTER -->
     <?php include '_/components/php/footer.php'; ?>

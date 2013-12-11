@@ -4,7 +4,7 @@
 /* Default CSS
 /*-------------------------------------------------*/
 body {
-  font-family: @font-familiy-normal;
+  font-family: @font-family-base;
 }
 
 .clear {
@@ -12,18 +12,23 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: @font-familiy-normal;
+  font-family: @font-family-serif;
   font-weight: 400;
 }
 
 input, button, select, textarea {
-  font-family: @font-familiy-bold;
+  font-family: @font-family-base;
 }
 
 a {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-family: @font-familiy-bold;
+  /*-webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;*/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: @font-family-base;
 }
 
 /* Header
@@ -44,7 +49,7 @@ a {
 }
 
 #header.affix .navbar.navbar-default {
-  background-color: rgba(100, 180, 80, 0.9);
+  background-color: rgba(100, 180, 80, 1.0);
 }
 
 /* Header Top Bar
@@ -125,6 +130,76 @@ a {
   letter-spacing: 2px;
 }
 
+/* Topbar on Nav Bar
+/*------------------------------------------------*/
+#header .navbar .contacts_block {
+  margin-right: 15px;
+}
+
+#header .navbar .contacts_block .social-icons {
+  margin-left: 10px;
+  float: right;
+  padding-top: 7px;
+
+  @media (max-width: 540px) {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+#header .navbar .contacts_block .social-icons > li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#header .navbar .social-icons > li > a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 14px;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition:all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#header .navbar .social-icons > li > a:hover {
+  color: @green-dark;
+}
+
+#header .navbar .contacts_block .phone {
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: @font-family-serif;
+  color: #fff;
+  padding-top: 7px;
+  letter-spacing: 0.1em;
+
+  @media (max-width: 767px) {
+    float: none;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 540px) {
+    float: none;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+#header .navbar .contacts_block .phone span {
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
 /* Nav Bar Brand
 /*------------------------------------------------*/
 #header .navbar-brand {
@@ -132,21 +207,21 @@ a {
   font-weight: 800;
   color: @navbar-default-brand-color !important;
   text-transform: uppercase;
-  padding: 25px 15px;
+  padding: 15px 15px;
 
   @media (max-width: 991px) {
     
   }
 
   @media (max-width: 337px) {
-    padding: 30px 15px;
+    padding: 15px 15px;
     width: 200px;
     height: 100%;
   }
 }
 
 #header.affix .navbar-brand {
-  padding: 10px 15px;
+  padding: 15px 15px;
   font-size: 23px;
 
   @media (max-width: 337px) {
@@ -166,7 +241,7 @@ a {
 
 #header .navbar-toggle {
   border-radius: 0;
-  margin-top: 33px;
+  margin-top: 18px;
 }
 
 #header.affix .navbar-toggle {
@@ -183,25 +258,26 @@ a {
 }
 
 #header .navbar-nav > li > a {
-  font-weight: 700;
+  font-family: @font-family-serif;
+  letter-spacing: 0.1em;
 
   @media (max-width: 991px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   @media (min-width: 768px) {
-    padding: 40px 18px;
+    padding: 15px 15px;
     text-transform: uppercase;
   }
 
   @media (max-width: 767px) {
     color: @navbar-default-link-color;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 #header .navbar-nav > li > .dropdown-menu {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #header .dropdown-menu > li > a {
@@ -274,7 +350,7 @@ a {
   }
 
   #header.affix .navbar-nav > li > a {
-    padding: 25px 18px;
+    padding: 15px 15px;
     text-transform: uppercase;
   }
 
@@ -297,14 +373,14 @@ a {
 
   #header .navbar-nav > .active > a, #header .navbar-nav > .active > a:hover, #header .navbar-nav > .active > a:focus {
     color: @navbar-default-link-color;
-    border-bottom: 4px solid #2ecc71;
-    padding-bottom: 37px;
+    border-bottom: 0px solid #2ecc71;
+    padding-bottom: 17px;
     background-color: @navbar-default-link-active-bg;
   }
 
   #header.affix .navbar-nav > .active > a, #header.affix .navbar-nav > .active > a:hover, #header.affix .navbar-nav > .active > a:focus {
-    border-bottom: 3px solid #2ecc71;
-    padding-bottom: 23px;
+    border-bottom: 0px solid #2ecc71;
+    padding-bottom: 17px;
   }
 
   #header .navbar-nav > .active > a:after {
@@ -314,7 +390,7 @@ a {
     height: 0;
     border-color: transparent;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0px;
     border-top-width: 0;
     border-bottom-color: #2ecc71;
     bottom: 0px;
@@ -550,7 +626,7 @@ a {
 .panel-announcement,
 .panel-rate {
   border-color: @panel-default-border;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .panel-announcement > .panel-heading,
@@ -564,9 +640,10 @@ a {
 .panel-rate .panel-heading > h4,
 .panel-mobile .panel-heading > h4 {
   font-family: @font-family-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: lighter;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .panel-announcement > .panel-body {
@@ -596,7 +673,7 @@ a {
 
 .panel-mobile {
   border-color: @panel-default-border;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .panel-mobile > .panel-heading {
@@ -610,6 +687,10 @@ a {
   padding: 0px;
 }
 
+.panel-converter {
+  margin-top: 40px;
+}
+
 .panel-about,
 .panel-faq,
 .panel-location,
@@ -617,14 +698,15 @@ a {
   border-color: @panel-default-border;
 }
 
-.panel-about .panel-heading > h3,
-.panel-faq .panel-heading > h3,
-.panel-location .panel-heading > h3,
-.panel-converter .panel-heading > h3 {
+.panel-about .panel-heading > h4,
+.panel-faq .panel-heading > h4,
+.panel-location .panel-heading > h4,
+.panel-converter .panel-heading > h4 {
   font-family: @font-family-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: lighter;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .panel-about > .panel-heading,
@@ -665,7 +747,7 @@ a {
   margin-top: 20px;
 }
 
-.panel-superrich .panel-heading > h3 {
+.panel-superrich .panel-heading > h4 {
   font-family: @font-family-serif;
   font-size: 20px;
   font-weight: lighter;
@@ -743,24 +825,32 @@ a {
 
 .table > thead > tr > th {
   text-align: center;
+  text-transform: uppercase;
+  font-family: @font-family-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
   border: 0;
+
 }
 
 .table > tbody > tr > td.denom {
   text-align: center;
   vertical-align: middle;
+  font-size: 16px;
 }
 
 .table > tbody > tr > td.currency-buying {
   text-align: center;
   vertical-align: middle;
   color: @green-dark;
+  font-size: 16px;
 }
 
 .table > tbody > tr > td.currency-selling {
   text-align: center;
   vertical-align: middle;
   color: @blue;
+  font-size: 16px;
 }
 
 .table > thead > tr > td.superrich,
@@ -784,7 +874,7 @@ a {
   background-color: @green-dark;
   color: #fff;
   font-weight: lighter;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   text-align: center;
   border-bottom: 1px solid @green-dark;
 }
@@ -838,10 +928,14 @@ h3.news-tab {
 .tab-content p {
   display: inline;
   margin: 20px 20px 20px 0;
+
+  @media (max-width: 991px) {
+    margin: 20px 10px 20px 0;
+  }
 }
 
 .tab-content table {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .tab-content > .tab-pane > img,
