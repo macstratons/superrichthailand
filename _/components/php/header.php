@@ -1,4 +1,4 @@
-<h1>SUPERRICH THAILAND</h1>
+<h1>SUPERRICH THAILAND <i class="fa fa-exchange"></i></h1>
 <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
