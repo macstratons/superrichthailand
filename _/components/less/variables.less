@@ -75,7 +75,7 @@
 // Links
 // -------------------------
 
-@link-color:            @brand-primary;
+@link-color:            @brand-tertiary;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
@@ -91,15 +91,15 @@
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
-@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
-@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
-@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+@font-size-h1:          floor(@font-size-base * 3.444); // ~62px
+@font-size-h2:          ceil(@font-size-base * 2.889); // ~52px
+@font-size-h3:          ceil(@font-size-base * 2.222); // ~40px
+@font-size-h4:          ceil(@font-size-base * 1.611); // ~29px
+@font-size-h5:          ceil(@font-size-base * 1.556); // ~28px
+@font-size-h6:          ceil(@font-size-base * 1.333); // ~24px
 
-@line-height-base:        1.428571429; // 20/14
-@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+@line-height-base:  		1.72222; // 31/18
+@line-height-computed:  floor(@font-size-base * @line-height-base); // ~31px
 
 @headings-font-family:    @font-family-accent;
 @headings-font-weight:    bold;
@@ -143,6 +143,11 @@
 @caret-width-base:               4px;
 @caret-width-large:              5px;
 
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+@component-font-size-base: ceil(@font-size-base * 0.833); // ~15px
+
 // Tables
 // -------------------------
 
@@ -160,7 +165,19 @@
 // Buttons
 // -------------------------
 
-@btn-font-weight:                normal;
+@btn-font-size-base: 			@component-font-size-base;
+@btn-font-size-xs:	       		ceil(@component-font-size-base * 0.80);   // ~12px
+@btn-font-size-sm:	       		floor(@component-font-size-base * 0.867); // ~13px
+@btn-font-size-lg:	       		ceil(@component-font-size-base * 1.133);  // ~17px
+@btn-font-size-hg:	       		floor(@component-font-size-base * 1.467); // ~22px
+
+@btn-line-height-base:					1.4; 	// ~21px
+@btn-line-height-hg:					1.227; // ~27px
+@btn-line-height-lg:					1.471; // ~25px
+@btn-line-height-sm:					1.385; // ~16px
+@btn-line-height-xs:					1.083; // ~13px
+
+@btn-font-weight:                bold;
 
 @btn-default-color:              @inverse;
 @btn-default-bg:                 @brand-secondary;
@@ -320,22 +337,22 @@
 @navbar-sublink-space: 9px;
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
-@navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+@navbar-default-color:             @inverse;
+@navbar-default-bg:                @brand-primary;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
+@navbar-default-link-color:                @inverse;
+@navbar-default-link-hover-color:          @link-color;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:         @link-color;
+@navbar-default-link-active-bg:            transparent;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -345,9 +362,9 @@
 @navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
-@navbar-default-toggle-hover-bg:           #ddd;
-@navbar-default-toggle-icon-bar-bg:        #ccc;
-@navbar-default-toggle-border-color:       #ddd;
+@navbar-default-toggle-hover-bg:           @link-color;
+@navbar-default-toggle-icon-bar-bg:        @inverse;
+@navbar-default-toggle-border-color:       @inverse;
 
 
 // Inverted navbar
