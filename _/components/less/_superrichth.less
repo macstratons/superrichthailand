@@ -1,0 +1,655 @@
+// Loading config with variables (changing them leads to changing a color scheme)
+@import "variables";
+
+/* Default CSS
+/*-------------------------------------------------*/
+body {
+  font-family: @font-family-base;
+  margin-top: 91px;
+  //background-color: #f9f9f9;
+}
+
+.clear {
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @font-family-serif;
+  font-weight: 400;
+}
+
+input, button, select, textarea {
+  font-family: @font-family-base;
+}
+
+a {
+  /*-webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;*/
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition:all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: @font-family-base;
+}
+
+/* Header
+/*-------------------------------------------------*/
+#header .navbar {
+  border: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+#header .navbar a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition:all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#header .navbar .contacts_block ul {
+  margin-left: 15px;
+  padding-top: 7px;
+
+  @media (max-width: 540px) {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+#header .navbar .contacts_block .social-icons > li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+#header .navbar .contacts_block .social-icons > li > a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition:all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#header .navbar .contacts_block .social-icons > li > a:hover {
+  color: @brand-tertiary;
+}
+
+#header .navbar .contacts_block .social-icons span {
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+
+#header .navbar .contacts_block .social-icons {
+  margin-left: 30px;
+  float: right;
+  font-weight: normal;
+  font-family: @font-family-serif;
+  color: #fff;
+  padding-top: 3px;
+  letter-spacing: 0.1em;
+
+  @media (max-width: 767px) {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 540px) {
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+#header .navbar .contacts_block .social-icons a {
+  font-weight: normal;
+  font-family: @font-family-serif;
+  color: #fff;
+}
+
+#header .navbar .contacts_block .social-icons a:hover {
+  color: @brand-tertiary;
+  text-decoration: none;
+}
+
+#header .navbar .contacts_block .phone {
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: @font-family-serif;
+  color: #fff;
+  padding-top: 7px;
+  letter-spacing: 0.1em;
+
+  @media (max-width: 767px) {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 540px) {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+#header .navbar .contacts_block .phone span {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+#header .navbar .contacts_block .language span {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+#header .navbar .contacts_block .language {
+  margin-left: 30px;
+  float: right;
+  font-weight: normal;
+  font-family: @font-family-serif;
+  color: #fff;
+  padding-top: 7px;
+  letter-spacing: 0.1em;
+
+  @media (max-width: 767px) {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 540px) {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+#header .navbar .contacts_block .language a {
+  font-weight: normal;
+  font-family: @font-family-serif;
+  color: #fff;
+}
+
+#header .navbar .contacts_block .language a:hover {
+  color: @brand-tertiary;
+  text-decoration: none;
+}
+
+#header .navbar-nav > li > a {
+	font-family: @font-family-accent;
+	font-size: @font-size-large; // ~18px
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	//padding: 22px @navbar-link-space;
+	margin-top: 20px;
+	padding: 10px @navbar-link-space;
+}
+
+/* Navbar Customization */
+/*-------------------------------------------------*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+ 	border-top-left-radius: 4px;
+ 	border-top-right-radius: 4px;
+
+ 	@media (max-width: 767px) {
+	    width: 100%;
+	    border-radius: 0;
+	  }
+}
+
+/* Panel Customization */
+/*-------------------------------------------------*/
+.panel-announcement,
+.panel-rate,
+.panel-mobile,
+.panel-converter {
+  	margin-top: 30px;
+}
+
+.panel-converter > .panel-heading {
+	text-transform: uppercase;
+}
+
+.panel-rate .panel-body,
+.panel-mobile .panel-body {
+	padding: 0;
+}
+
+.panel-about > .panel-body h4,
+.panel-faq > .panel-body h4 {
+  margin-top: 15px;
+  color: @brand-primary;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.panel-about > .panel-body img {
+  margin-bottom: 10px;
+}
+
+.panel-faq > .panel-body img {
+  margin: 0 auto 0;
+}
+
+.announcement-block {
+	height: 217px;
+
+	@media (max-width: 1199px) {
+    	height: 100%;
+  	}
+}
+
+.rate-block,
+.mobile-block {
+	height: 247px;
+
+	@media (max-width: 1199px) {
+    	height: 100%;
+  	}
+}
+
+.converter-block .nav > li > a {
+	padding: 5px 10px;
+}
+
+.panel-about {
+	display: block;
+	height: 525px;
+
+	@media (max-width: 1199px) {
+	  height: 100%;
+	}
+}
+
+.about-block.content,
+.faq-block.content {
+	width: 100%;
+	height: 100%;
+}
+
+.panel-faq {
+  display: block;
+  height: 700px;
+
+  @media (max-width: 1199px) {
+    height: 100%;
+  }
+}
+
+/* Table Customization */
+/*-------------------------------------------------*/
+.table {
+	margin-bottom: 0;
+}
+
+.table > thead > tr > th {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: @font-family-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+.table > thead > tr.superrich-header > th {
+	text-align: center;
+	text-transform: uppercase;
+  	font-family: @font-family-serif;
+  	font-size: 14px;
+  	font-weight: 300;
+  	color: @inverse;
+  	background-color: @brand-tertiary;
+  	letter-spacing: 1px;
+}
+
+.table > thead > tr.superrich > td,
+.table > tbody > tr.superrich > td,
+.table > tfoot > tr.superrich > td {
+	text-align: center;
+}
+
+.table > tbody > tr > td.denom {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table > tbody > tr > td.currency-buying {
+	vertical-align: middle;
+	text-align: center;
+	color: @brand-tertiary;
+}
+
+.table > tbody > tr > td.currency-selling {
+  vertical-align: middle;
+  text-align: center;
+  color: @brand-secondary;
+}
+
+/* Form Customization */
+/*-------------------------------------------------*/
+#base-currency {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+#exchange-currency {
+  padding-right: 0;
+  padding-left: 5px;
+  margin-bottom: 0;
+}
+
+#swap-currency {
+  margin-top: 22px;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#rate-currency {
+	margin-top: 5px;
+	text-align: center;
+}
+
+#rate-currency p {
+  /*display: inline;*/
+  margin: 0;
+  font-size: 14px;
+  color: @brand-secondary;
+}
+
+#rate-currency h4 {
+  padding: 0 1em 0;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: right;
+  color: @brand-primary;
+}
+
+#archives {
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+/* Misc. Customization */
+/*-------------------------------------------------*/
+.sr-logo img {
+
+  	@media (max-width: 767px) {
+		margin: 0 auto;
+ 	}
+}
+
+.sr-headline h1 {
+	margin: 60px 0px 10px;
+	color: @brand-primary;
+	font-size: 48px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+
+	@media (max-width: 1199px) {
+		font-size: 40px;
+	}
+
+  	@media (max-width: 767px) {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+  	@media (max-width: 503px) {
+		font-size: 26px;
+	}
+
+	@media (max-width: 401px) {
+		font-size: 20px;
+	}
+}
+
+.sr-headline h3 {
+	margin-bottom: 20px;
+	color: @gray-light;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	vertical-align: middle;
+
+  	@media (max-width: 767px) {
+		text-align: center;
+	}
+}
+
+.footer.teaser p{
+	display: inline-block;
+	margin: 70px 10px;
+	font-family: @font-family-serif;
+	color: @gray-light;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+#content-margin,
+#map {
+  margin-top: 30px;
+}
+
+#message .modal-header h4 {
+	color: @brand-tertiary;
+}
+
+#message .modal-body .form-group label,
+#message .modal-body .form-group input,
+#message .modal-body .form-group textarea {
+	margin: 0 0 10px;
+}
+
+.th-blue {
+  background-color: @brand-secondary;
+  color: #fff;
+}
+
+.th-green {
+  background-color: @brand-primary;
+  color: #fff;
+}
+
+.th-green-dark {
+  background-color: @brand-tertiary;
+  color: #fff;
+}
+
+.popover-title {
+    color: @brand-secondary;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.popover-content {
+    color: @brand-primary;
+    font-size: 14px;
+    text-align: center;
+}
+
+.map img {
+  margin: 0 auto;
+}
+
+/* Tab Customization */
+/*-------------------------------------------------*/
+h4.currency-tab,
+h4.news-tab {
+	color: @brand-tertiary;
+	letter-spacing: 1px;
+}
+
+.nav-pills {
+	margin-bottom: 10px;
+}
+
+.nav-pills > li > a {
+  font-family: @font-family-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  line-height: 1.428571429;
+  letter-spacing: 0.5px;
+  background-color: @gray-lighter;
+  color: @gray-light;
+}
+
+.nav-pills .dropdown-menu > li > a {
+	font-family: @font-family-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.nav-pills > li > a:hover {
+  background-color: #ddd;
+  color: @brand-tertiary;
+  border-color: @gray;
+}
+
+.nav-pills .dropdown-menu > li > a:hover {
+	background-color: transparent;
+	color: @brand-tertiary;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: @inverse;
+  cursor: default;
+  background-color: @brand-secondary;
+}
+
+.nav-tabs {
+  border-bottom-color: @nav-tabs-border-color;
+  margin-bottom: 10px;
+}
+
+.nav-tabs > li > a {
+  margin-right: 8px;
+  line-height: 1.428571429;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border-color: @nav-tabs-border-color;
+}
+
+.nav-tabs > li > a:hover {
+  color: @inverse;
+  background-color: @brand-tertiary;
+  border-color: @brand-tertiary;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: @inverse;
+  cursor: default;
+  background-color: @brand-secondary;
+  border-color: @brand-secondary;
+}
+
+.tab-content {
+	margin-top: 5px;
+}
+
+.tab-content p {
+  display: inline;
+  margin: 20px 40px 20px 0;
+
+  @media (max-width: 991px) {
+    margin: 20px 10px 20px 0;
+  }
+}
+
+.tab-content table {
+  margin: 30px 0;
+}
+
+.tab-content > .tab-pane > img,
+.tab-content > .tab-pane > button {
+  margin: 20px 0;
+}
+
+/* Footer Customization */
+/*-------------------------------------------------*/
+.footer.row {
+  margin-top: 0.1em;
+  font-size: small;
+}
+
+.footer.row li {
+  margin-left: 10px;
+}
+
+.social-icons-footer > ul {
+  float: right;
+
+  @media (max-width: 1199px) {
+    float: none;
+    padding: 0;
+  }
+}
+
+.social-icons-footer li {
+  display: inline;
+}
+
+/* ToTop
+ * -------------------------- */
+.scrollup {
+    width: 40px;
+    height: 40px;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    display: none;
+    text-align: center;
+    color: #fafafa;
+    font-size: 28px;
+    background: #9e9e9e;
+    z-index: 9995;
+}
+
+.scrollup i {
+    line-height: 38px;
+}
+
+a.scrollup:hover i, a.scrollup:focus i {
+    text-decoration: none;
+    color: #fafafa;
+    outline: none;
+}

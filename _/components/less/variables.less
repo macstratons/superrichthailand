@@ -75,8 +75,8 @@
 // Links
 // -------------------------
 
-@link-color:            @brand-primary;
-@link-hover-color:      darken(@link-color, 15%);
+@link-color:            @brand-tertiary;
+@link-hover-color:      @brand-secondary;
 
 // Typography
 // -------------------------
@@ -138,10 +138,15 @@
 @border-radius-small:            3px;
 
 @component-active-color:         #fff;
-@component-active-bg:            @brand-primary;
+@component-active-bg:            @brand-secondary;
 
 @caret-width-base:               4px;
 @caret-width-large:              5px;
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+@component-font-size-base: ceil(@font-size-base * 0.833); // ~15px
 
 // Tables
 // -------------------------
@@ -150,17 +155,29 @@
 @table-condensed-cell-padding:       5px;
 
 @table-bg:                           transparent; // overall background-color
-@table-bg-accent:                    #f9f9f9; // for striping
+@table-bg-accent:                    #fff; // for striping
 @table-bg-hover:                     #f5f5f5;
 @table-bg-active:                    @table-bg-hover;
 
-@table-border-color:                 #ddd; // table and cell border
+@table-border-color:                 #eee; // table and cell border
 
 
 // Buttons
 // -------------------------
 
-@btn-font-weight:                normal;
+@btn-font-size-base: 			@component-font-size-base;
+@btn-font-size-xs:	       		ceil(@component-font-size-base * 0.80);   // ~12px
+@btn-font-size-sm:	       		floor(@component-font-size-base * 0.867); // ~13px
+@btn-font-size-lg:	       		ceil(@component-font-size-base * 1.133);  // ~17px
+@btn-font-size-hg:	       		floor(@component-font-size-base * 1.467); // ~22px
+
+@btn-line-height-base:					1.4; 	// ~21px
+@btn-line-height-hg:					1.227; // ~27px
+@btn-line-height-lg:					1.471; // ~25px
+@btn-line-height-sm:					1.385; // ~16px
+@btn-line-height-xs:					1.083; // ~13px
+
+@btn-font-weight:                bold;
 
 @btn-default-color:              @inverse;
 @btn-default-bg:                 @brand-secondary;
@@ -320,22 +337,22 @@
 @navbar-sublink-space: 9px;
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 @navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+@navbar-default-bg:                @brand-primary;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
+@navbar-default-link-color:                @inverse;
+@navbar-default-link-hover-color:          @link-color;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:         @inverse;
+@navbar-default-link-active-bg:            @brand-tertiary;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -345,9 +362,9 @@
 @navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
-@navbar-default-toggle-hover-bg:           #ddd;
-@navbar-default-toggle-icon-bar-bg:        #ccc;
-@navbar-default-toggle-border-color:       #ddd;
+@navbar-default-toggle-hover-bg:           @link-color;
+@navbar-default-toggle-icon-bar-bg:        @inverse;
+@navbar-default-toggle-border-color:       @inverse;
 
 
 // Inverted navbar
@@ -566,10 +583,10 @@
 
 // Panels
 // -------------------------
-@panel-bg:                    #fff;
+@panel-bg:                    #f9f9f9;
 @panel-inner-border:          #ddd;
 @panel-border-radius:         @border-radius-base;
-@panel-footer-bg:             #f5f5f5;
+@panel-footer-bg:             #f4f4f4;
 
 @panel-default-text:          @gray-dark;
 @panel-default-border:        #ddd;
