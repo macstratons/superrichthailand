@@ -199,9 +199,9 @@ a {
 }
 
 #header .navbar-nav > li > a {
-	font-family: @font-family-accent;
-	font-size: @font-size-large; // ~18px
-	font-weight: bold;
+	font-family: @font-family-serif;
+	font-size: 14px;
+	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	//padding: 22px @navbar-link-space;
@@ -366,15 +366,27 @@ a {
 }
 
 #swap-currency {
-  margin-top: 22px;
+  margin-top: 0px;
   margin-bottom: 0;
   padding: 0;
   text-align: center;
 }
 
+#swap-currency a {
+	color: @btn-default-color;
+	background-color: @btn-default-bg;
+	border-color: @btn-default-border;
+}
+
+#swap-currency a:hover {
+	background-color: @brand-tertiary;
+	border-color: darken(@brand-tertiary, 5%);;
+}
+
 #rate-currency {
 	margin-top: 5px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 #rate-currency p {
@@ -390,6 +402,11 @@ a {
   vertical-align: middle;
   text-align: right;
   color: @brand-primary;
+}
+
+#left-currency,
+#right-currency {
+	margin-top: 7px;
 }
 
 #archives {

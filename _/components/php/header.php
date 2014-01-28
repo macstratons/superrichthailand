@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" id="logo" href="#"><img src="images/sr-logo.png" class="img-responsive"></a>
+        <a class="navbar-brand" id="logo" href="index.php"><img src="images/sr-logo.png" class="img-responsive"></a>
       </div>
       <!-- /.navbar-header -->
 

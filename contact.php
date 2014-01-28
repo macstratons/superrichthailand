@@ -7,6 +7,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="_/css/bootstrap.css" rel="stylesheet">
     <link href="_/css/superrichth.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon@2x.png">
   </head>
   
   <body id="contact">

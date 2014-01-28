@@ -7,6 +7,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="_/css/bootstrap.css" rel="stylesheet">
     <link href="_/css/superrichth.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon@2x.png">
 
     <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>

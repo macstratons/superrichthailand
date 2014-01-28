@@ -7,6 +7,12 @@ $(function() {
   $("#contact a:contains('CONTACT')").parent().addClass('active');
   $("#news a:contains('NEWS UPDATE')").parent().addClass('active');
   $("#faq a:contains('FAQ')").parent().addClass('active');
+  $("#home a:contains('หน้าหลัก')").parent().addClass('active');
+  $("#home a:contains('อัตราแลกเปลี่ยน')").parent().addClass('active');
+  $("#home a:contains('เกี่ยวกับเรา')").parent().addClass('active');
+  $("#home a:contains('ติดต่อเรา')").parent().addClass('active');
+  $("#home a:contains('ข่าสาร')").parent().addClass('active');
+  $("#home a:contains('คำถามพบบ่อย')").parent().addClass('active');
 
   /*
   //make menus drop automatically

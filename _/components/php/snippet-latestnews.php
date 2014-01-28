@@ -12,9 +12,9 @@
             <h4>New regulations have changed.</h4>
             <p class="small"><em>Posted by Admin on 1.1.2013</em></p>
             <p>According to the Bank of Thailand regulations, 
-              customers who wish to purchase foreign currencies must present your passport copy. 
-              Each can exchange not more than 5,000 USD or equivalent.
-              Your national ID or driving license is not permitted. We apologise for any inconvenience caused.
+                customers who wish to purchase foreign currencies must present your passport copy. 
+                Each can exchange not more than 5,000 USD or equivalent.
+                Your national ID or driving license is not permitted. We apologise for any inconvenience caused.
               <a href="news.php"> Read more <i class="fa fa-angle-right"></i></a>
             </p>
           </div>

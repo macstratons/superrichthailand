@@ -7,6 +7,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="_/css/bootstrap.css" rel="stylesheet">
     <link href="_/css/superrichth.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon@2x.png">
   </head>
   
   <body id="home">
@@ -22,6 +23,7 @@
         <?php include '_/components/php/snippet-announcement.php'; ?>
         <?php include '_/components/php/snippet-ratetable.php'; ?>
         <?php include '_/components/php/snippet-mobileapp.php'; ?>
+        
       </div>
       <!-- end row -->
     </div>

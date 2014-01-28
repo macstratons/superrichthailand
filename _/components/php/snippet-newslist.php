@@ -8,7 +8,9 @@
         <div class="media-body">
           <h4 class="media-heading">Media Heading 1</h4>
           <p class="small"><em>Posted on 1.1.2013</em></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. 
+          Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi 
+          vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
           <a href="news-post.php" class="pull-right">Read more <i class="fa fa-angle-right"></i></a>
         </div>
       </li>

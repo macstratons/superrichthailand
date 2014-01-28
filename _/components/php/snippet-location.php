@@ -26,7 +26,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane fade in active" id="hq">
-                <img src="images/rajdamri.jpg" class="img-responsive hidden-md hidden-sm hidden-xs">
+                <img src="images/branch-rajdamri.jpg" class="img-responsive hidden-md hidden-sm hidden-xs">
                 <h4>SUPERRICH THAILAND</h4>
                 <address>
                   <strong>Rajdamri</strong><br>
@@ -54,10 +54,10 @@
               </div>
 
               <div class="tab-pane fade" id="branch">
-                <img src="images/rajdamri.jpg" class="img-responsive hidden-md hidden-sm hidden-xs">
+                <img src="images/branch-vibhavadi.jpg" class="img-responsive hidden-md hidden-sm hidden-xs">
                 <h4>SUPERRICH THAILAND</h4>
                 <address>
-                  <strong><i class="fa fa-map-marker"></i> Vibhavadi</strong><br>
+                  <strong><i class="fa fa-map-marker"></i> Vibhavadi 22</strong><br>
                   18/4 Soi Vibhavadi 22, Vibhavadi - Rangsit Rd.<br>
                   Chompon, Chatuchak<br>
                   Bangkok, 10900, Thailand
@@ -83,7 +83,7 @@
               </div>
 
               <div class="tab-pane fade" id="kiosk">
-                <img src="images/rajdamri.jpg" class="img-responsive hidden-md hidden-sm hidden-xs">
+                <img src="images/branch-vibhavadi.jpg" class="img-responsive hidden-md hidden-sm hidden-xs">
                 <h3>Super Rich (Thailand) Co., Ltd.</h3>
                 <address>
                   <strong><i class="fa fa-map-marker"></i> Kiosk</strong><br>
