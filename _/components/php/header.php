@@ -21,7 +21,7 @@
             <div class="social-icons"><span><a href="https://twitter.com/superrichTH" target="_blank"><i class="fa fa-twitter"></i></a></span></div>
             <div class="social-icons"><span><a href="https://www.facebook.com/SuperRichThailand" target="_blank"><i class="fa fa-facebook"></i></a></span></div>
             <!-- Edit phone number here -->
-            <div class="language"><span><a href="#">TH</a> | <a href="#">EN</a></span></div>
+            <div class="language"><span><a href="index.php/?locale=en&set_locale=th">TH</a> | <a href="index.php/?locale=en&set_locale=en">EN</a></span></div>
             <div class="phone"><span><i class="fa fa-phone"></i> +66 (0)2 254 4444</span></div>
             <div class="clear"></div>
             <!-- ./phone -->
